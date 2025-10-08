@@ -8,7 +8,7 @@ import {
 } from "lucide-react"
 
 // --- CONFIGURATION ---
-const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY || "e869c13380ae357b3e8330d8fa003681" 
+const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY || "" 
 const LAT = 37.7749
 const LON = -122.4194
 const SF_TIMEZONE = "America/Los_Angeles"
