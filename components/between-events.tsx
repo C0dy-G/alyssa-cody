@@ -1,36 +1,62 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MouseOff as Museum, Coffee, Croissant, Trees, ShoppingBag } from "lucide-react"
+import { Palette, Coffee, Croissant, Trees, ShoppingBag, IceCream } from "lucide-react"
+
+// Define the structure for a recommendation item
+interface Recommendation {
+  icon: React.ElementType;
+  title: string;
+  // This allows the description to contain JSX elements like <em>
+  description: React.ReactNode; 
+  color: string; // Tailwind color class for the icon/border
+}
 
 export function BetweenEvents() {
-  const recommendations = [
+  const recommendations: Recommendation[] = [
     {
-      icon: Museum,
+      icon: Palette, 
       title: "Asian Art Museum",
       description: "Explore world-class Asian art collections just steps away.",
+      color: "text-purple-700",
     },
     {
       icon: Coffee,
-      title: "Blue Bottle Coffee",
-      description: "Grab a specialty coffee at this beloved SF roastery.",
-    },
-    {
-      icon: Croissant,
-      title: "La Boulangerie",
-      description: "Enjoy fresh pastries and French-inspired treats.",
-    },
-    {
-      icon: Trees,
-      title: "Patricia's Green Park",
-      description: "Relax in this charming Hayes Valley green space.",
+      title: "Hayes Valley Coffee Shops",
+      description: "Grab a morning espresso or a quick afternoon pick-me-up nearby.",
+      color: "text-amber-700",
     },
     {
       icon: ShoppingBag,
-      title: "Hayes Valley Shops",
-      description: "Browse unique boutiques and local designer stores.",
+      title: "Hayes Street Boutiques",
+      description: "Window shop or find unique gifts along Hayes Valley's trendy streets.",
+      color: "text-pink-700",
+    },
+    {
+      icon: Trees,
+      title: "Civic Center Plaza",
+      description: "A large public green space perfect for a brief, relaxing stroll.",
+      color: "text-green-700",
+    },
+    {
+      icon: Croissant,
+      title: "La Boulange",
+      description: "Grab a classic French pastry and a latte before the ceremony begins.",
+      color: "text-yellow-800", 
+    },
+    {
+      icon: IceCream,
+      title: "Salt & Straw",
+      // FIXED: Removed font-semibold class. The <em> tag provides italics.
+      description: (
+        <>
+          They open at 11 AM. (We aren&apos;t recommending dessert <em >before</em> lunch, but we aren&apos;t stopping you, either.)
+        </>
+      ),
+      color: "text-red-500",
     },
   ]
+
 
   return (
     <section id="between-events" className="py-20 md:py-32 px-4 bg-white">
