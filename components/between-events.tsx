@@ -78,31 +78,32 @@ export function BetweenEvents() {
           </h2>
           <p className="text-center text-[#67846B] mb-16 text-lg">10:00 AM – 11:30 AM</p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recommendations.map((rec, index) => (
-              <a
-                key={index}
-                href={rec.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="flex flex-col justify-between h-full bg-[#E4DAC6] p-6 rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer"
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {recommendations.map((rec, index) => (
+                <a
+                  key={index}
+                  href={rec.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer h-full" // <-- cursor-pointer on the link, fills height
                 >
-                  <div>
-                    <rec.icon className="w-10 h-10 text-[#1a522a] mb-4" />
-                    <h3 className="text-xl font-semibold text-[#0a0a0a] mb-2">{rec.title}</h3>
-                    <p className="text-[#67846B] leading-relaxed">{rec.description}</p>
-                  </div>
-                </motion.div>
-              </a>
-            ))}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                    className="flex flex-col justify-between bg-[#E4DAC6] p-6 rounded-lg shadow-sm hover:shadow-md transition-all h-full"
+                  >
+                    <div>
+                      <rec.icon className="w-10 h-10 text-[#1a522a] mb-4" />
+                      <h3 className="text-xl font-semibold text-[#0a0a0a] mb-2">{rec.title}</h3>
+                      <p className="text-[#67846B] leading-relaxed">{rec.description}</p>
+                    </div>
+                  </motion.div>
+                </a>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
