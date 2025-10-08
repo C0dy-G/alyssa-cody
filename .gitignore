@@ -1,1 +1,43 @@
-node_modules
+Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+Build artifacts
+/.next/
+/out/
+
+Environments
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm / yarn / pnpm lock files that shouldn't be committed
+Uncomment these if you're using one package manager exclusively and
+want to explicitly ignore others, but usually, just ignoring the folders is enough.
+yarn.lock
+pnpm-lock.yaml
+Runtime data
+.next/
+/out/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.nextjs-cache
+
+MacOS/Linux
+.DS_Store
+
+Windows
+Thumbs.db
+
+VS Code directory (optional, but recommended)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
