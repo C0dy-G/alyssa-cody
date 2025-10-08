@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion"
 import { Clock, MapPin, Calendar } from "lucide-react"
-import { Button } from "@/components/ui/button"
+// Assuming Button component is correctly imported from "@/components/ui/button"
+// If you don't have this file, you'll need to create a simple button component or replace with <button>
+import { Button } from "@/components/ui/button" 
 
 export function Schedule() {
   const generateICS = (event: "ceremony" | "lunch") => {
@@ -56,7 +58,36 @@ END:VCALENDAR`
         >
           <h2 className="font-serif text-4xl md:text-5xl text-[#1a522a] text-center mb-16">Schedule</h2>
 
-          <div className="space-y-12">
+          <div className="space-y-4">
+            
+            {/* NEW: Arrival */}
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#E4DAC6] flex items-center justify-center">
+                <Clock className="w-6 h-6 text-[#1a522a]" />
+              </div>
+              <div className="flex-1 pt-2">
+                <h3 className="text-xl font-semibold text-[#0a0a0a]">8:30 AM - Guests Arrive</h3>
+                <p className="text-sm text-[#67846B]">City Hall opens for access to the 4th floor.</p>
+              </div>
+            </div>
+
+            {/* Connecting line */}
+            <div className="ml-6 w-px h-8 bg-[#875353]" />
+
+            {/* NEW: Seating */}
+            <div className="flex gap-6 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#E4DAC6] flex items-center justify-center">
+                <Clock className="w-6 h-6 text-[#1a522a]" />
+              </div>
+              <div className="flex-1 pt-2">
+                <h3 className="text-xl font-semibold text-[#0a0a0a]">8:45 AM - Seating Begins</h3>
+                <p className="text-sm text-[#67846B]">Please take your seats in the North Gallery.</p>
+              </div>
+            </div>
+
+            {/* Connecting line */}
+            <div className="ml-6 w-px h-8 bg-[#875353]" />
+
             {/* Ceremony */}
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#E4DAC6] flex items-center justify-center">
@@ -91,10 +122,10 @@ END:VCALENDAR`
               </div>
             </div>
 
-            {/* Connecting line */}
+            {/* Connecting line (already existed) */}
             <div className="ml-6 w-px h-8 bg-[#875353]" />
 
-            {/* Lunch */}
+            {/* Lunch (already existed) */}
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#E4DAC6] flex items-center justify-center">
                 <Clock className="w-6 h-6 text-[#1a522a]" />

@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/workspaces/alyssa-cody/app/layout\":[\"static/media/85ec3505000466ce-s.p.woff2\",\"static/media/036afb91967e20ed-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

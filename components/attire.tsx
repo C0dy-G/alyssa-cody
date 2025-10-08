@@ -22,7 +22,7 @@ export function Attire() {
               jacket or wrap.
             </p>
             <p className="text-[#67846B]">
-              Dress code: Semi-formal. Wear what makes you feel comfortable and celebratory!
+              Please wear a suit or an elegant dress.
             </p>
           </div>
         </motion.div>

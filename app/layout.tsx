@@ -22,7 +22,7 @@ const notoSans = Noto_Sans_Devanagari({
 export const metadata: Metadata = {
   title: "Wedding Celebration - October 16, 2025",
   description: "Join us for our wedding celebration in San Francisco",
-  generator: "v0.app",
+  generator: "No Notes Studio",
 }
 
 export default function RootLayout({
