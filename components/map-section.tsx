@@ -95,7 +95,7 @@ export function MapSection() {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* Civic Center Garage (Parking Suggestion) */}
-            <div className="bg-[#E4DAC6] p-6 rounded-xl shadow-md transition-shadow hover:shadow-lg">
+            <div className="bg-gradient-to-br from-[#F5F2EF] to-[#E4DAC6] p-6 rounded-xl shadow-md transition-all hover:shadow-lg">
               <p className="text-sm font-light text-[#67846B] mb-1">Parking</p>
               <h3 className="font-serif text-xl text-[#1a522a] mb-3">Civic Center Garage</h3>
               <a
@@ -109,7 +109,7 @@ export function MapSection() {
             </div>
 
             {/* SF City Hall (Ceremony) */}
-            <div className="bg-[#E4DAC6] p-6 rounded-xl shadow-md transition-shadow hover:shadow-lg">
+            <div className="bg-gradient-to-br from-[#F5F2EF] to-[#E4DAC6] p-6 rounded-xl shadow-md transition-all hover:shadow-lg">
               <p className="text-sm font-light text-[#67846B] mb-1">Ceremony</p>
               <h3 className="font-serif text-xl text-[#1a522a] mb-3">SF City Hall</h3>
               <a
@@ -123,7 +123,7 @@ export function MapSection() {
             </div>
 
             {/* Hazie's (Reception) */}
-            <div className="bg-[#E4DAC6] p-6 rounded-xl shadow-md transition-shadow hover:shadow-lg">
+            <div className="bg-gradient-to-br from-[#F5F2EF] to-[#E4DAC6] p-6 rounded-xl shadow-md transition-all hover:shadow-lg">
               <p className="text-sm font-light text-[#67846B] mb-1">Reception</p>
               <h3 className="font-serif text-xl text-[#1a522a] mb-3">Hazie&apos;s Restaurant</h3>
               <a
@@ -135,8 +135,9 @@ export function MapSection() {
                 501 Hayes St, San Francisco, CA 94102
               </a>
             </div>
-            
+
           </div>
+
         </motion.div>
       </div>
     </section>
