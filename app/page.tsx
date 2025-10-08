@@ -4,7 +4,7 @@ import { Parking } from "@/components/parking"
 import { MapSection } from "@/components/map-section"
 import { Navigation } from "@/components/navigation"
 import { BetweenEvents } from "@/components/between-events"
-import { Attire } from "@/components/attire"
+import { AttireAndWeather } from "@/components/attire-and-weather"
 import { Footer } from "@/components/footer"
 
 export default function WeddingPage() {
@@ -16,7 +16,7 @@ export default function WeddingPage() {
       <MapSection />
       <Navigation />
       <BetweenEvents />
-      <Attire />
+      <AttireAndWeather />
       <Footer />
     </main>
   )
