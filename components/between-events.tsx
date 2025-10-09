@@ -72,6 +72,8 @@ export function BetweenEvents() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+              whileHover={{ y: -4 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
         >
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#1a522a] text-center mb-4">
             Between Events
@@ -102,7 +104,7 @@ export function BetweenEvents() {
                     )}
 
                     {/* Icon */}
-                    <Icon className={`w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 ${rec.color} flex-shrink-0`} />
+                    <Icon  className="w-10 h-10 sm:w-12 sm:h-12 mb-3 sm:mb-4 flex-shrink-0" stroke={rec.color} />
 
                     {/* Title */}
                     <h3 className="text-base sm:text-lg font-semibold text-[#0a0a0a] mb-1 relative">

@@ -134,7 +134,7 @@ END:VCALENDAR`
                 <h3 className="text-2xl font-semibold text-[#0a0a0a] mb-2">11:30 AM - Lunch</h3>
                 <div className="flex items-start gap-2 text-[#67846B] mb-4">
                   <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                  <p className="leading-relaxed">Hazie's, San Francisco</p>
+                  <p className="leading-relaxed">Hazie's, in Hayes Valley on the corner of Octavia and Hayes</p>
                 </div>
                 <Button
                   onClick={() => generateICS("lunch")}

@@ -21,7 +21,7 @@ export function Parking() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Civic Center Garage */}
             <motion.div
-              whileHover={{ y: -4 }}
+              whileHover={{ y: -0 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="rounded-xl shadow-sm overflow-hidden bg-gradient-to-b from-[#FAF9F8] to-[#F4F2EF] p-8 transition-all hover:shadow-md"
             >
@@ -39,10 +39,10 @@ export function Parking() {
                 >
                   355 McAllister St, San Francisco, CA 94102
                 </a>
-                . Closest to City Hall and a short walk to the reception.
+                Closest to City Hall and a short walk to the reception.
               </p>
               <p className="text-sm text-[#875353] mb-2">
-                Rates vary; arrive early for best availability.
+                Rates vary, arrive early for best availability.
               </p>
               {/*<p className="text-sm text-[#67846B] italic">
                 You can park here and walk to both venues — no need to move your car between events.
@@ -52,7 +52,7 @@ export function Parking() {
 
             {/* Performing Arts Garage */}
             <motion.div
-              whileHover={{ y: -4 }}
+              whileHover={{ y: -0 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
               className="rounded-xl shadow-md overflow-hidden bg-gradient-to-b from-[#FAF9F8] to-[#F4F2EF] p-8 transition-all hover:shadow-lg"
             >
@@ -82,7 +82,7 @@ export function Parking() {
 
           {/* Ride Options */}
           <motion.div
-            whileHover={{ y: -4 }}
+            whileHover={{ y: -0 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             className="mt-8 rounded-xl shadow-md overflow-hidden bg-gradient-to-b from-[#FAF9F8] to-[#F4F2EF] p-8 transition-all hover:shadow-lg"
           >
